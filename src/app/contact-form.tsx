@@ -10,7 +10,9 @@ import {
   Button,
   IconButton,
 } from "@material-tailwind/react";
-import { EnvelopeIcon, PhoneIcon, TicketIcon } from "@heroicons/react/24/solid";
+import { EnvelopeIcon, PhoneIcon, TicketIcon  } from "@heroicons/react/24/solid";
+import Link from "next/link";
+
 
 export function ContactForm() {
   return (
@@ -44,13 +46,13 @@ export function ContactForm() {
               <div className="flex gap-5">
                 <PhoneIcon className="h-6 w-6 text-white" />
                 <Typography variant="h6" color="white" className="mb-2">
-                  +1(424) 535 3523
+                  +212 6 28 55 70 66
                 </Typography>
               </div>
               <div className="flex my-2 gap-5">
                 <EnvelopeIcon className="h-6 w-6 text-white" />
                 <Typography variant="h6" color="white" className="mb-2">
-                  hello@mail.com
+                  rachiddaoudi533@gmail.com
                 </Typography>
               </div>
               <div className="flex mb-10 gap-5">
@@ -64,11 +66,32 @@ export function ContactForm() {
                   <i className="fa-brands fa-facebook text-lg" />
                 </IconButton>
                 <IconButton variant="text" color="white">
-                  <i className="fa-brands fa-instagram text-lg" />
+                  <Link href="https://www.instagram.com/rachid18daoudi" target="_blank">
+                    <i className="fa-brands fa-instagram text-lg" />
+                  </Link>
                 </IconButton>
                 <IconButton variant="text" color="white">
-                  <i className="fa-brands fa-github text-lg" />
+                  <Link href="https://github.com/RachidDaoudii" target="_blank">
+                    <i className="fa-brands fa-github text-lg" />
+                  </Link>
                 </IconButton>
+                <IconButton variant="text" color="white">
+                  <i className="fa-brands fa-twitter text-lg" />
+                </IconButton>
+                <IconButton variant="text" color="white" 
+                >
+                  <Link href="https://www.linkedin.com/in/rachid-daoudi-a560a3193/" target="_blank">
+                    <i className="fa-brands fa-linkedin text-lg" />
+                  </Link>
+                </IconButton>
+
+                <IconButton variant="text" color="white" 
+                >
+                  <Link href="mailto:rachiddaoudi533@gmail.com">
+                    <i className="fa-brands fa-google text-lg" />
+                  </Link>
+                </IconButton>
+                
               </div>
             </div>
             <div className="w-full mt-8 md:mt-0 md:px-10 col-span-4 h-full p-5">
@@ -76,7 +99,7 @@ export function ContactForm() {
                 <div className="mb-8 grid gap-4 lg:grid-cols-2">
                   {/* @ts-ignore */}
                   <Input
-                    color="gray"
+                    color="teal"
                     size="lg"
                     variant="static"
                     label="First Name"
@@ -85,10 +108,11 @@ export function ContactForm() {
                     containerProps={{
                       className: "!min-w-full mb-3 md:mb-0",
                     }}
+                    required
                   />
                   {/* @ts-ignore */}
                   <Input
-                    color="gray"
+                    color="teal"
                     size="lg"
                     variant="static"
                     label="Last Name"
@@ -97,19 +121,22 @@ export function ContactForm() {
                     containerProps={{
                       className: "!min-w-full",
                     }}
+                    required
                   />
                 </div>
                 {/* @ts-ignore */}
                 <Input
-                  color="gray"
+                  color="teal"
                   size="lg"
                   variant="static"
                   label="Email"
-                  name="first-name"
+                  type="Email"
+                  name="email"
                   placeholder="eg. lucas@mail.com"
                   containerProps={{
                     className: "!min-w-full mb-8",
                   }}
+                  required
                 />
                 <Typography
                   variant="lead"
@@ -134,7 +161,7 @@ export function ContactForm() {
                 </div>
                 {/* @ts-ignore */}
                 <Textarea
-                  color="gray"
+                  color="teal"
                   size="lg"
                   variant="static"
                   label="Your Message"
@@ -142,6 +169,7 @@ export function ContactForm() {
                   containerProps={{
                     className: "!min-w-full mb-8",
                   }}
+                  required
                 />
                 <div className="w-full flex justify-end">
                   <Button className="w-full md:w-fit" color="gray" size="md">

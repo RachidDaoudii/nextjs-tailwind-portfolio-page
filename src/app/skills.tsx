@@ -74,6 +74,7 @@ export function Skills() {
           <SkillCard key={idx} {...props} />
         ))}
       </div>
+
     </section>
   );
 }

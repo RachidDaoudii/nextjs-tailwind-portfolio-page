@@ -13,22 +13,36 @@ import {
   Squares2X2Icon,
   XMarkIcon,
   Bars3Icon,
+  Cog6ToothIcon
 } from "@heroicons/react/24/solid";
 
 const NAV_MENU = [
+
   {
-    name: "Page",
-    icon: RectangleStackIcon,
-  },
-  {
-    name: "Account",
+    name: "About Me",
     icon: UserCircleIcon,
   },
   {
-    name: "Docs",
-    icon: CommandLineIcon,
-    href: "https://www.material-tailwind.com/docs/react/installation",
+    name: "Educations",
+    icon: RectangleStackIcon,
   },
+  {
+    name: "Skills",
+    icon: CommandLineIcon,
+  },
+  {
+    name: "Projects",
+    icon: Squares2X2Icon,
+  },
+  {
+    name: "Contact",
+    icon: Cog6ToothIcon,
+  },
+  // {
+  //   name: "Docs",
+  //   icon: CommandLineIcon,
+  //   href: "https://www.material-tailwind.com/docs/react/installation",
+  // },
 ];
 
 interface NavItemProps {
@@ -69,7 +83,7 @@ export function Navbar() {
     <MTNavbar shadow={false} fullWidth className="border-0 sticky top-0 z-50">
       <div className="container mx-auto flex items-center justify-between">
         <Typography color="blue-gray" className="text-lg font-bold">
-          Material Tailwind
+          Rachid Daoudi
         </Typography>
         <ul className="ml-10 hidden items-center gap-8 lg:flex">
           {NAV_MENU.map(({ name, icon: Icon, href }) => (
@@ -80,10 +94,13 @@ export function Navbar() {
           ))}
         </ul>
         <div className="hidden items-center gap-2 lg:flex">
-          <Button variant="text">Sign In</Button>
-          <a href="https://www.material-tailwind.com/blocks" target="_blank">
-            <Button color="gray">blocks</Button>
+          <a href="#" target="_blank">
+            {/* <Button color="gray">Sign In</Button> */}
           </a>
+          {/* <Button variant="text">Sign In</Button> */}
+          {/* <a href="https://www.material-tailwind.com/blocks" target="_blank">
+            <Button color="gray">blocks</Button>
+          </a> */}
         </div>
         <IconButton
           variant="text"
@@ -109,10 +126,10 @@ export function Navbar() {
             ))}
           </ul>
           <div className="mt-6 mb-4 flex items-center gap-2">
-            <Button variant="text">Sign In</Button>
-            <a href="https://www.material-tailwind.com/blocks" target="_blank">
+            {/* <Button variant="text">Sign In</Button> */}
+            {/* <a href="https://www.material-tailwind.com/blocks" target="_blank">
               <Button color="gray">blocks</Button>
-            </a>
+            </a> */}
           </div>
         </div>
       </Collapse>
