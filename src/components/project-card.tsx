@@ -27,10 +27,10 @@ interface ProjectCardProps {
     {
       BackEnd: string[];
       FrontEnd: string[];
-      Deployment: string
+      Deployment: string[]
     }
   ];
-  github?: string;
+  github?: string|"";
 }
 
 
@@ -43,8 +43,8 @@ export function ProjectCard({ img, title, desc, content ,skills,github ,Features
 const handleOpen = () => setOpen(!open);
   return (
     <>
-    <Card color="transparent" shadow={false}>
-      <CardHeader floated={false} className="mx-0 mt-0 mb-6 h-48">
+    <Card color="transparent" shadow={false} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+      <CardHeader floated={false} className="mx-0 mt-0 mb-6 h-48" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
         <Image
           src={img}
           alt={title}
@@ -53,25 +53,25 @@ const handleOpen = () => setOpen(!open);
           className="h-full w-full object-cover"
         />
       </CardHeader>
-      <CardBody className="p-0">
+      <CardBody className="p-0" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
         <a
           href="#"
           className="text-blue-gray-900 transition-colors hover:text-gray-800"
         >
-          <Typography variant="h5" className="mb-2">
+          <Typography variant="h5" className="mb-2" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             {title}
           </Typography>
         </a>
-        <Typography className="mb-6 font-normal !text-gray-500">
+        <Typography className="mb-6 font-normal !text-gray-500" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           {desc}
         </Typography>
-        <Button color="gray" size="sm" onClick={handleOpen}>
+        <Button color="gray" size="sm" onClick={handleOpen} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           see details
         </Button>
       </CardBody>
     </Card>
 
-    <Dialog open={open} handler={handleOpen}>
+    <Dialog open={open} handler={handleOpen} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
     <section  className="p-8">
       <div className="mx-auto max-w-screen-md h-[40rem] overflow-y-scroll">
         <img
@@ -82,7 +82,7 @@ const handleOpen = () => setOpen(!open);
         <Typography
           variant="h2"
           color="blue-gray"
-          className="text-3xl font-bold mb-6 "
+          className="text-3xl font-bold mb-6 " placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}
         >
           {title}
         </Typography>
@@ -121,15 +121,15 @@ const handleOpen = () => setOpen(!open);
 
             <h3 className="text-xl font-medium mt-4 mb-2">Deployment:</h3>
             <ul className="list-disc pl-6 space-y-2">
-                {Responsibilities &&  Responsibilities[0]?.Deployment.map((responsibility, index) =>  (
+                {Responsibilities &&  Responsibilities[0]?.Deployment.map((responsibility :any, index:any) =>  (
                 <li key={index}>{responsibility}</li>
                 ))}
             </ul>
           </div>
         </div>
         <Typography
-          variant="small"
-          className="font-medium !text-blue-500 my-6"
+          variant="small" 
+          className="font-medium !text-blue-500 my-6" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}
         >
           <span className="flex flex-wrap gap-6">{skills && skills.map((skill, index) => (
             <Image
@@ -145,11 +145,11 @@ const handleOpen = () => setOpen(!open);
         </Typography>
         <Typography
           variant="small"
-          className="font-medium !text-blue-500"
+          className="font-medium !text-blue-500" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}
         >
           <div className="flex justify-center">
       
-          <Link href={github} target="_blank" className="p-2 hover:bg-gray-300 rounded">
+          <Link href={github ?? '#'} target="_blank" className="p-2 hover:bg-gray-300 rounded" >
             View on Github  <i className="fa-brands fa-github text-lg" />
           </Link>
           </div>
@@ -157,11 +157,11 @@ const handleOpen = () => setOpen(!open);
 
       </div>
     </section >
-        <DialogFooter className="space-x-2">
-          <Button variant="text" color="blue-gray" onClick={handleOpen}>
+        <DialogFooter className="space-x-2" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+          <Button variant="text" color="blue-gray" onClick={handleOpen} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             close
           </Button>
-          <Button variant="gradient" onClick={handleOpen}>
+          <Button variant="gradient" onClick={handleOpen} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             Ok, Got it
           </Button>
         </DialogFooter>

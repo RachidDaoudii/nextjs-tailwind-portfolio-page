@@ -23,8 +23,8 @@ const config: Config = withMT({
             },
       },
       animation: {
-        'bounce-slow': 'bounce-slow 5s infinite',
-        'spin-slow': 'spin-slow 5s linear infinite',
+        'bounce-slow': 'bounce-slow 3s infinite',
+        'spin-slow': 'spin-slow 2s linear infinite',
       },
     },
   },

@@ -11,9 +11,9 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Rachid Daoudi - Portfolio Page",
-  description:
-    "Highly skilled and creative Web Developer with 2+ years of experience in crafting visually stunning and functionally robust websites and web applications.",
+  title: "Rachid Daoudi",
+  description: "Highly skilled and creative Web Developer with 2+ years of experience in crafting visually stunning and functionally robust websites and web applications.",
+  keywords: ["Rachid", "Daoudi", "Web", "Developer", "React", "Next.js", "Tailwind", "CSS", "HTML", "JavaScript", "TypeScript", "Node.js", "Express", "MongoDB", "Firebase", "Figma", "Adobe", "Photoshop", "Illustrator", "UI", "UX", "Design", "Frontend", "Backend", "Fullstack", "MERN", "Stack", "GraphQL", "RESTful", "API", "Responsive", "Mobile", "First", "Design", "SEO", "Optimization", "Performance", "Accessibility", "Web", "Standards", "Best", "Practices", "Code", "Quality", "Testing", "Deployment", "Version", "Control", "Git", "GitHub", "GitLab", "Bitbucket", "CI/CD", "Workflow", "Agile", "Scrum", "Kanban", "Jira", "Trello", "Slack", "Zoom", "Google", "Meet", "Microsoft", "Teams", "VSCode", "IntelliJ", "WebStorm", "Postman", "Insomnia", "Google", "Lighthouse", "Web", "Vitals", "Performance", "Budgets", "PWA", "AMP", "SPA", "SSR", "ISR", "SSG", "SEO", "Sitemap", "Robots", "txt", "Schema", "Structured", "Data", "Open", "Graph", "Twitter", "Card", "Meta", "Tags", "Canonical", "Hreflang", "Pagination", "Href", "Lang", "Accessibility", "ARIA", "Landmarks", "Screen", "Reader", "Skip", "Links", "Focus", "Management", "Keyboard", "Navigation", "Contrast", "Ratio", "Color", "Blindness", "Deuteranopia", "Protanopia", "Tritanopia", "Monochromacy", "Dyschromatopsia", "Inclusive", "Design", "User", "Experience", "Performance", "Optimization", "SEO", "Accessibility", "Web", "Standards", "Best", "Practices", "Code", "Quality", "Testing", "Deployment", "Version", "Control", "Git", "GitHub", "GitLab", "Bitbucket", "CI/CD", "Workflow", "Agile", "Scrum", "Kanban", "Jira", "Trello", "Slack", "Zoom", "Google", "Meet", "Microsoft", "Teams", "VSCode", "IntelliJ", "WebStorm", "Postman", "Insomnia"],
 };
 
 export default function RootLayout({

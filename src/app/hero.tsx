@@ -36,13 +36,13 @@ function Hero() {
           <Typography
             variant="h1"
             color="blue-gray"
-            className="mb-4 lg:text-5xl !leading-tight text-3xl"
+            className="mb-4 lg:text-5xl !leading-tight text-3xl" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}
           >
             Welcome to my Web <br /> Development Portofolio!
           </Typography>
           <Typography
             variant="lead"
-            className="mb-4 !text-gray-500 md:pr-16 xl:pr-28"
+            className="mb-4 !text-gray-500 md:pr-16 xl:pr-28" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}
           >
             Hi.
             I&apos;m Rachid Daoudi, a passionate Full-Stack && Mern-Stack Developer based in Morocco. Here,
@@ -52,15 +52,16 @@ function Hero() {
           <div className="grid">
             <Typography
               variant="small"
-              className="mb-2 text-gray-900 font-medium"
+              className="mb-2 text-gray-900 font-medium" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}
             >
               Your email
             </Typography>
             <div className="mb-2 flex w-full flex-col gap-4 md:w-10/12 md:flex-row">
               {/* @ts-ignore */}
-              <Input color="teal" label="Enter your email" type="email" size="lg" required onChange={handleChange}  />
+              
+              <Input color="teal" label="Enter your email" type="email" size="lg" required onChange={handleChange}  crossOrigin="anonymous"   />
              
-              <Button color="gray" className="w-full px-4 md:w-[12rem]" onClick={handleSubmit} >
+              <Button color="gray" className="w-full px-4 md:w-[12rem]"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                 require offer
               </Button>
             </div>
@@ -71,7 +72,7 @@ function Hero() {
             </span>): null
           }
           
-          <Typography variant="small" className="font-normal !text-gray-500">
+          <Typography variant="small" className="font-normal !text-gray-500" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             Read my{" "}
             <a href="#" className="font-medium underline transition-colors">
               Terms and Conditions

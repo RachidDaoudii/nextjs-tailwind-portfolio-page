@@ -14,7 +14,7 @@ export  function Experience() {
         <div className="container w-full flex flex-row-reverse flex-wrap mx-auto mb-20  justify-around items-center relative">
 
         <div>
-            <Typography variant="h2" color="blue-gray" className="mb-4 relative">
+            <Typography variant="h2" color="blue-gray" className="mb-4 relative" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             WORK EXPERIENCE
             </Typography>
             <div className="bg-custom-gradient w-80 h-80 rounded-full flex items-center justify-center absolute top-1/4 left-3/4 transform -translate-x-1/2 -translate-y-1/2 shadow-lg animate-bounce-slow" style={{zIndex:-2}}>
@@ -26,12 +26,12 @@ export  function Experience() {
                 <TimelineConnector />
                 <TimelineHeader className="h-3">
                     <TimelineIcon />
-                    <Typography variant="h6" color="blue-gray" className="leading-none">
+                    <Typography variant="h6" color="blue-gray" className="leading-none" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                     Internship : Consultant technique e-business | From July 2023 to September 2023 Cegedim Agadir Morocco
                     </Typography>
                 </TimelineHeader>
                 <TimelineBody className="pb-8 mt-2">
-                    <Typography variant="small" color="gary" className="font-normal text-gray-600">
+                    <Typography variant="small"  className="font-normal text-gray-600" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                     Tasks carried out: <br />
                     Migration of customer invoices from the 'GIS' platform to the 'Sy' platform from
                     test mode to production mode.
@@ -49,13 +49,13 @@ export  function Experience() {
                 <TimelineConnector />
                 <TimelineHeader className="h-3">
                     <TimelineIcon />
-                    <Typography variant="h6" color="blue-gray" className="leading-none">
+                    <Typography variant="h6" color="blue-gray" className="leading-none" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                     Internship : Devlopper front-end | From May 2023 to July 2023
                     MajorMedia Agadir Morocco
                     </Typography>
                 </TimelineHeader>
                 <TimelineBody className="pb-8 mt-2">
-                    <Typography variant="small" color="gary" className="font-normal text-gray-600">
+                    <Typography variant="small" className="font-normal text-gray-600" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                       
                     Internal log manager application which allows employee activities to be traced
                     between different states (in meetings / on break, etc.) and generates statistics on
@@ -69,13 +69,13 @@ export  function Experience() {
                 <TimelineConnector />
                 <TimelineHeader className="h-3">
                     <TimelineIcon />
-                    <Typography variant="h6" color="blue-gray" className="leading-none">
+                    <Typography variant="h6" color="blue-gray" className="leading-none" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                     Internship : Devlopper Full-Stack (C# , Asp.net) | May 2022 - May 2022 1 month
                     ACSCBM Agadir Morocco
                     </Typography>
                 </TimelineHeader>
                 <TimelineBody className="pb-8 mt-2">
-                    <Typography variant="small" color="gary" className="font-normal text-gray-600"> 
+                    <Typography variant="small" className="font-normal text-gray-600" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}> 
                     web developer racing pigeon website
                     <br />
                     Tools: Langage de modélisation unifié (UML) - Microsoft SQL Server - Bootstrap - C# -ASP.NET MVC

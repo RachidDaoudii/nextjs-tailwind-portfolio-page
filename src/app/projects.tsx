@@ -210,12 +210,12 @@ export function Projects() {
   return (
     <section className="py-28 px-8">
       <div className="container mx-auto mb-20 text-center">
-        <Typography variant="h2" color="blue-gray" className="mb-4">
+        <Typography variant="h2" color="blue-gray" className="mb-4" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           My Projects
         </Typography>
         <Typography
           variant="lead"
-          className="mx-auto w-full px-4 font-normal !text-gray-500 lg:w-6/12"
+          className="mx-auto w-full px-4 font-normal !text-gray-500 lg:w-6/12" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}
         >
           Whether you have a mobile app idea that needs to come to life or a
           website that requires a facelift, I&apos;m here to turn your digital
@@ -225,7 +225,7 @@ export function Projects() {
 
       <div className="my-4 mx-4 flex justify-center bg-gray-200 px-4 flex-wrap rounded-xl">
           {Skills.map(({ label, value }) => (
-            <Button variant="text" key={value} className="mx-4 my-2" onClick={handleTabChange}>
+            <Button variant="text" key={value} className="mx-4 my-2" onClick={handleTabChange} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
               {label}
             </Button>
           ))}

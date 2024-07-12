@@ -32,7 +32,6 @@ export default function Portfolio() {
       {/* <Clients /> */}
       <div className="bg-custom-gradient w-96 h-96 rounded-full flex items-center justify-center absolute buttom-[500px] left-[150px] transform -translate-x-1/2 -translate-y-1/2 shadow-lg animate-bounce animate-pulse" style={{zIndex:-2}}>
       </div>
-
       <ContactForm />
       <Footer />
       

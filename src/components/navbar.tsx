@@ -15,28 +15,34 @@ import {
   Bars3Icon,
   Cog6ToothIcon
 } from "@heroicons/react/24/solid";
+import Link from "next/link";
 
 const NAV_MENU = [
 
   {
     name: "About Me",
     icon: UserCircleIcon,
+    href:""
   },
   {
     name: "Educations",
     icon: RectangleStackIcon,
+    href:""
   },
   {
     name: "Skills",
     icon: CommandLineIcon,
+    href:""
   },
   {
     name: "Projects",
     icon: Squares2X2Icon,
+    href:""
   },
   {
     name: "Contact",
     icon: Cog6ToothIcon,
+    href:""
   },
   // {
   //   name: "Docs",
@@ -59,7 +65,7 @@ function NavItem({ children, href }: NavItemProps) {
         target={href ? "_blank" : "_self"}
         variant="paragraph"
         color="gray"
-        className="flex items-center gap-2 font-medium text-gray-900"
+        className="flex items-center gap-2 font-medium text-gray-900" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}
       >
         {children}
       </Typography>
@@ -80,9 +86,9 @@ export function Navbar() {
   }, []);
 
   return (
-    <MTNavbar shadow={false} fullWidth className="border-0 sticky top-0 z-50">
+    <MTNavbar shadow={false} fullWidth className="border-0 sticky top-0 z-50" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
       <div className="container mx-auto flex items-center justify-between">
-        <Typography color="blue-gray" className="text-lg font-bold">
+        <Typography color="blue-gray" className="text-lg font-bold" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           Rachid Daoudi
         </Typography>
         <ul className="ml-10 hidden items-center gap-8 lg:flex">
@@ -98,15 +104,15 @@ export function Navbar() {
             {/* <Button color="gray">Sign In</Button> */}
           </a>
           {/* <Button variant="text">Sign In</Button> */}
-          {/* <a href="https://www.material-tailwind.com/blocks" target="_blank">
-            <Button color="gray">blocks</Button>
-          </a> */}
+          {/* <Link href="/pages" target="_blank">
+            <Button color="gray" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>blocks</Button >
+          </Link> */}
         </div>
         <IconButton
           variant="text"
           color="gray"
           onClick={handleOpen}
-          className="ml-auto inline-block lg:hidden"
+          className="ml-auto inline-block lg:hidden" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}
         >
           {open ? (
             <XMarkIcon strokeWidth={2} className="h-6 w-6" />
@@ -119,7 +125,8 @@ export function Navbar() {
         <div className="container mx-auto mt-3 border-t border-gray-200 px-2 pt-4">
           <ul className="flex flex-col gap-4">
             {NAV_MENU.map(({ name, icon: Icon }) => (
-              <NavItem key={name}>
+              <NavItem key={name}
+              >
                 <Icon className="h-5 w-5" />
                 {name}
               </NavItem>

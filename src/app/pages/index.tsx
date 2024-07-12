@@ -1,5 +1,5 @@
 
-
+"use Client"
 export default function MyResume() {
 
     return (

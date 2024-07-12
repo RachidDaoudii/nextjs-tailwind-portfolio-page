@@ -26,8 +26,8 @@ export const Radar = ({ className }: any) => {
       {circles.map((circle, idx) => (
         <Circle
           style={{
-            height: `${(idx + 1) * 8}rem`,
-            width: `${(idx + 1) * 8}rem`,
+            height: `${(idx + 1) * 9}rem`,
+            width: `${(idx + 1) * 9}rem`,
             border: `1px solid rgba(71, 85, 105, ${1 - (idx + 1) * 0.09})`,
           }}
           key={`motion-${idx}`}
