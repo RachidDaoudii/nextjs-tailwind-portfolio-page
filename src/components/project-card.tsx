@@ -23,13 +23,7 @@ interface ProjectCardProps {
   content: string;
   skills?: string[];
   Features?: string[];
-  Responsibilities?: [
-    {
-      BackEnd: string[];
-      FrontEnd: string[];
-      Deployment: string[]
-    }
-  ];
+  Responsibilities?: any;
   github?: string|"";
 }
 
@@ -73,10 +67,12 @@ const handleOpen = () => setOpen(!open);
 
     <Dialog open={open} handler={handleOpen} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
     <section  className="p-8">
-      <div className="mx-auto max-w-screen-md h-[40rem] overflow-y-scroll">
-        <img
+      <div className="mx-auto max-w-screen-md  overflow-y-scroll h-[40rem]">
+        <Image
           src={img}
-          alt="team work"
+          width={768}
+          height={768}
+          alt={title}
           className="mb-4 h-[28rem] w-full rounded-xl object-cover"
         />
         <Typography
@@ -107,14 +103,14 @@ const handleOpen = () => setOpen(!open);
             
             <h3 className="text-xl font-medium mb-2">Back-end:</h3>
             <ul className="list-disc pl-6 space-y-2">
-                {Responsibilities &&  Responsibilities[0]?.BackEnd.map((responsibility, index) =>  (
+                {Responsibilities &&  Responsibilities[0]?.BackEnd.map((responsibility:any, index:any) =>  (
                 <li key={index}>{responsibility}</li>
                 ))}
             </ul>
 
             <h3 className="text-xl font-medium mt-4 mb-2">Front-end:</h3>
             <ul className="list-disc pl-6 space-y-2">
-                {Responsibilities &&  Responsibilities[0]?.FrontEnd.map((responsibility, index) =>  (
+                {Responsibilities &&  Responsibilities[0]?.FrontEnd.map((responsibility:any, index:any) =>  (
                 <li key={index}>{responsibility}</li>
                 ))}
             </ul>

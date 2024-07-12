@@ -33,12 +33,12 @@ export  function Experience() {
                 <TimelineBody className="pb-8 mt-2">
                     <Typography variant="small"  className="font-normal text-gray-600" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                     Tasks carried out: <br />
-                    Migration of customer invoices from the 'GIS' platform to the 'Sy' platform from
+                    Migration of customer invoices from the GIS platform to the Sy platform from
                     test mode to production mode.
                     We have developed a scraper to collect information relating to companies using
-                    their VAT number, from the "Company" platform. Next, we carried out a
-                    verification of the company's data on various platforms, including the website of
-                    "Société", "Verif" and "Le Figaro", with the aim of determining whether the company
+                    their VAT number, from the Company platform. Next, we carried out a
+                    verification of the company&apos; s data on various platforms, including the website of
+                    Société, Verif and Le Figaro, with the aim of determining whether the company
                     is in operation or has ceased. its operations.
                     <br />
                     Tools: Python - Django - Tailwind.

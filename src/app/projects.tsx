@@ -61,9 +61,22 @@ const Skills = [
     value: "docker",
    },
  ];
- 
+ type ProjectCardProps = {
+  img: string;
+  title: string;
+  desc: string;
+  content: string;
+  skills: string[];
+  Features: string[];
+  Responsibilities: {
+    BackEnd: string[];
+    FrontEnd: string[];
+    Deployment: string[];
+  }[];
+  github: string;
+};
 
-const PROJECTS = [
+const PROJECTS : ProjectCardProps[] = [
   {
     img: "/image/blog-1.svg",
     title: "PharmGarde mobile application",
@@ -200,7 +213,7 @@ const PROJECTS = [
 
 
 export function Projects() {
-  const [selectedTab, setSelectedTab] = useState(PROJECTS);
+  const [selectedTab, setSelectedTab] = useState<ProjectCardProps[]>(PROJECTS);
 
   const handleTabChange = (e:any) => {
     if(e.target.textContent === "All") return setSelectedTab(PROJECTS);
@@ -231,11 +244,20 @@ export function Projects() {
           ))}
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-4">
-        {selectedTab.map((props, idx) => (
-          <ProjectCard key={idx} {...props} />
+        {selectedTab.map(({ img, title, desc, content, skills, github, Features, Responsibilities }, idx) => (
+          <ProjectCard key={idx}  
+            img={img} 
+            title={title} 
+            desc={desc} 
+            content={content} 
+            skills={skills} 
+            Features={Features} 
+            Responsibilities={Responsibilities} 
+            github={github}
+          />
         ))}
-              <div className="bg-custom-gradient w-96 h-96 rounded-full flex items-center justify-center absolute bottom-[2300px] left-[1300px] transform -translate-x-1/2 -translate-y-1/2 shadow-lg animate-bounce-slow" style={{zIndex:-2}}>
-              </div>
+        <div className="bg-custom-gradient w-96 h-96 rounded-full flex items-center justify-center absolute bottom-[2300px] left-[1300px] transform -translate-x-1/2 -translate-y-1/2 shadow-lg animate-bounce-slow" style={{zIndex:-2}}>
+        </div>
       </div>
     </section>
   );
