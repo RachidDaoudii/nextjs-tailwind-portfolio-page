@@ -2,7 +2,7 @@
 import { Metadata } from 'next'
 import { Navbar, Footer } from "@/components";
  
-export default function Page() {
+export default function Contact() {
   return (
     <div>
       <Navbar />

@@ -2,7 +2,6 @@ describe('Navigation', () => {
   it('should navigate to the Contact page', () => {
     cy.viewport(1580, 820)
     cy.visit('http://localhost:3000')
-    
     cy.scrollTo('0%', '45%', { duration: 2000 })
     cy.get('button').contains('React-js').click()
     cy.wait(2000)

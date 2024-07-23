@@ -4,6 +4,6 @@ export const metadata: Metadata = {
   title: 'Next.js',
 }
  
-export default function Page() {
+export default function Dashboard() {
   return 'Dashboard...'
 }

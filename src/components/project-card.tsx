@@ -153,7 +153,7 @@ const handleOpen = () => setOpen(!open);
 
       </div>
     </section >
-        <DialogFooter className="space-x-2" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+        <DialogFooter className="space-x-2 pt-4 mt-8" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           <Button variant="text" color="blue-gray" className="close" onClick={handleOpen} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             close
           </Button>
