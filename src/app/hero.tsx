@@ -59,9 +59,9 @@ function Hero() {
             <div className="mb-2 flex w-full flex-col gap-4 md:w-10/12 md:flex-row">
               {/* @ts-ignore */}
               
-              <Input color="teal" label="Enter your email" type="email" size="lg" required onChange={handleChange}  crossOrigin="anonymous"   />
+              <Input color="teal" label="Enter your email" name="require offer" type="email" size="lg" required onChange={handleChange}  crossOrigin="anonymous"   />
              
-              <Button color="gray" className="w-full px-4 md:w-[12rem]"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+              <Button color="gray" className="w-full px-4 md:w-[12rem]" name="require offer"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                 require offer
               </Button>
             </div>

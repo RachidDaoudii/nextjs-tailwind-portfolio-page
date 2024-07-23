@@ -40,7 +40,7 @@ export  function Educations() {
                 <TimelineHeader className="h-3">
                     <TimelineIcon />
                     <Typography variant="h6" color="blue-gray" className="leading-none" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-                    Technician specialized in IT development
+                    Specialized Technician in IT development
                     </Typography>
                 </TimelineHeader>
                 <TimelineBody className="pb-8">
@@ -54,7 +54,7 @@ export  function Educations() {
                 <TimelineHeader className="h-3">
                     <TimelineIcon />
                     <Typography variant="h6" color="blue-gray" className="leading-none" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-                    1st year of study science economics
+                    1 year of studying economics
                     </Typography>
                 </TimelineHeader>
                 <TimelineBody className="pb-8">
@@ -64,11 +64,10 @@ export  function Educations() {
                 </TimelineBody>
                 </TimelineItem>
                 <TimelineItem>
-                {/* <TimelineConnector /> */}
                 <TimelineHeader className="h-3">
                     <TimelineIcon />
                     <Typography variant="h6" color="blue-gray" className="leading-none" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-                    Scientific baccalaureate in life and earth science 
+                    Scientific baccalaureate in science
                     </Typography>
                 </TimelineHeader>
                 <TimelineBody className="pb-8">

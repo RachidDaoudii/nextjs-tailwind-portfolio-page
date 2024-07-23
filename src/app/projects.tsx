@@ -98,7 +98,7 @@ const PROJECTS : ProjectCardProps[] = [
     title: "KickOff mobile application",
     desc: "KickOff is a React Native Expo app for football fans, delivering live match updates, player stats, and personalized team tracking in real-time.",
     content :" KickOff is a mobile application crafted using React Native and Expo, designed to provide football enthusiasts with a dynamic platform to stay updated on live football matches. Users can personalize their experience by following favorite teams and players, receiving real-time updates on match scores, and exploring detailed player statistics. Whether tracking ongoing matches or reviewing past performances, KickOff delivers a comprehensive toolset for fans to immerse themselves in the excitement of football action.",
-    skills: ["Node-js","React Native", "Expo", "Redux", "Api"],
+    skills: ["Node-js","React Native", "Expo", "Redux", "Rest-Api"],
     Features:[],
     Responsibilities:[
       {

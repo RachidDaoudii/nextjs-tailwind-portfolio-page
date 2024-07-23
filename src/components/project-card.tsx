@@ -37,7 +37,7 @@ export function ProjectCard({ img, title, desc, content ,skills,github ,Features
 const handleOpen = () => setOpen(!open);
   return (
     <>
-    <Card color="transparent" shadow={false} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+    <Card color="transparent" shadow={false} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} >
       <CardHeader floated={false} className="mx-0 mt-0 mb-6 h-48" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
         <Image
           src={img}
@@ -47,16 +47,16 @@ const handleOpen = () => setOpen(!open);
           className="h-full w-full object-cover"
         />
       </CardHeader>
-      <CardBody className="p-0" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+      <CardBody className="p-0 " placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
         <a
           href="#"
           className="text-blue-gray-900 transition-colors hover:text-gray-800"
         >
           <Typography variant="h5" className="mb-2" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-            {title}
+            {title.slice(0, 25)}...
           </Typography>
         </a>
-        <Typography className="mb-6 font-normal !text-gray-500" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+        <Typography className="mb-6 font-normal !text-gray-500 h-[150px]" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           {desc}
         </Typography>
         <Button color="gray" size="sm" onClick={handleOpen} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
@@ -66,8 +66,8 @@ const handleOpen = () => setOpen(!open);
     </Card>
 
     <Dialog open={open} handler={handleOpen} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-    <section  className="p-8">
-      <div className="mx-auto max-w-screen-md  overflow-y-scroll h-[40rem]">
+    <section  className="p-8 h-[80vh] ">
+      <div className="overflow-y-auto h-[80vh] dialog">
         <Image
           src={img}
           width={768}
@@ -154,7 +154,7 @@ const handleOpen = () => setOpen(!open);
       </div>
     </section >
         <DialogFooter className="space-x-2" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-          <Button variant="text" color="blue-gray" onClick={handleOpen} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+          <Button variant="text" color="blue-gray" className="close" onClick={handleOpen} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             close
           </Button>
           <Button variant="gradient" onClick={handleOpen} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
