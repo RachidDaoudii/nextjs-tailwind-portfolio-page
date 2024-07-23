@@ -9,7 +9,6 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 //   weight: ["300", "400", "500", "700", "900"],
 //   display: "swap",
 // });
-import { Html, Head, Main, NextScript } from "next/document";
 
 export const metadata: Metadata = {
   title: "Rachid Daoudi - Portfolio",
